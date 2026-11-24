@@ -1,1 +1,27 @@
-key: value
+COLUMNS:
+  fixed_acidity:
+    dtype: float
+  volatile_acidity:
+    dtype: float
+  citric_acid:
+    dtype: float
+  residual_sugar:
+    dtype: float
+  chlorides:
+    dtype: float
+  free_sulfur_dioxide:
+    dtype: float
+  total_sulfur_dioxide:
+    dtype: float
+  density:
+    dtype: float
+  pH:
+    dtype: float
+  sulphates:
+    dtype: float
+  alcohol:
+    dtype: float
+  quality:
+    dtype: int
+
+TARGET_COLUMN: quality
