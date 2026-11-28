@@ -12,4 +12,72 @@
 7. Update the pipeline
 8. Update the main.py
 9. Update the app.py
+
+'''
+# How to run?
+'''
+### STEPS:
+
+Clone the repository
+
+```bash
+https://github.com/Faraz-Gill/END-TO-ENT-MACHINE-LEARNING-PROJECT-WITH-MLFLOW.git
+```
+'''
+### STEP 01- Create a conda environment after opening the repository
+
+```bash
+conda create -n mlproj python=3.10 -y
+```
+
+```bash
+conda activate mlproj
+```
+
+
+
+'''### STEP 02- install the requirements
+```bash
+pip install  -r requirements.txt
+```
+
+
+```bash
+# Finally run the following command
+python app.py
+```
+
+Now,
+```bash
+open up your local host and port
+```
+
+## MLflow
+
+[Documenttation](https://mlflow.org/docs/latest/index.html)
+
+
+### cmd
+-mlflow ui
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+import dagshub
+dagshub.init(repo_owner='Faraz-Gill', repo_name='END-TO-ENT-MACHINE-LEARNING-PROJECT-WITH-MLFLOW', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1) 
+
+Run this to export as env vairables:
+
+```bash
+
+export MFLOW_TRACKING_URI=https://dagshub.com/Faraz-Gill/END-TO-ENT-MACHINE-LEARNING-PROJECT-WITH-MLFLOW.mlflow
+export MLFLOW_TRACKING_USERNAME=FARAZ-GILL
+export MLFLOW_TRACKING_PASSWORD=9e32b96a9a5044303f6832c7d3038ee75105e088
+```
+
  
